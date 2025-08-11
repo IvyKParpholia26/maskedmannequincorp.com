@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Have No Mouth and I Must Scream.</title>
+    <script>
+        function checkPassword() {
+            const encodedPassword = 'ZGVlcA==';
+
+            var enteredPassword = prompt("Can you pinpoint me towards the truth?", "");
+
+            if (btoa(enteredPassword) === encodedPassword) {
+                alert("Go deeper... yes, that's it.");
+                window.location.href = "likewhatyousee.html";
+            } else {
+                alert("But all that came out were stammers. A total pain.");
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword();">
+</body>
+</html>
